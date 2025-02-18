@@ -1,0 +1,145 @@
+/* Extend central content column width from 2 to 16 */
+.main {
+    max-width: calc(var(--main-width) + var(--gap) * 16);
+}
+
+/* Add crimson border around post entries */
+.post-entry {
+    border-color: crimson;
+    border-width: 2px;
+}
+
+/* Show --list-img cover images in list entries */
+@media (min-width: 800px) {
+    .entry-content>p,
+    .entry-content>h2,
+    .entry-header>p,
+    .entry-header>h2 {
+        width: 70%;
+    }
+
+    .post-entry {
+        background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, var(--entry) 30%), var(--list-img);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Apply embellishments to blog title logo */
+.logo a {
+    text-shadow:
+    3px 3px 2px red,
+    -3px 3px 2px red,
+    -3px -3px 0 red,
+    3px -3px 0 red;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* Apply highlighting effects to list entries  */
+article.post-entry:hover {
+    filter: brightness(75%);
+}
+
+article.post-entry:active {
+    filter: brightness(50%);
+}
+
+.dark {
+    article.post-entry:hover {
+        filter: brightness(150%);
+    }
+    
+    article.post-entry:active {
+        filter: brightness(200%);
+    }
+}
+
+.post-content hr {
+    background-color: crimson;
+}
+
+/* Set content title font in content pages and list entries to this font */
+h1.post-title.entry-hint-parent {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+h2.entry-hint-parent {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+span:active {
+    filter: brightness(150%);
+}
+
+svg:hover {
+    filter: brightness(150%);
+}
+
+/* Set hyperlink colors */
+.post-content a {
+    color: red;
+}
+
+.post-content a:hover {
+    color: coral;
+}
+
+.post-content a:active {
+    filter: brightness(50%);
+}
+
+/* Set footnote CSS */
+a.footnote-ref {
+    color: rgb(255, 139, 7);
+    font-weight: bold;
+}
+
+.background-image {
+    background-repeat: repeat;
+}
+
+/* For Testament widget in the bottom left */
+.testament {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    padding: 12px;
+}
+
+/* Only display Testament if the monitor is wide enough */
+@media (min-width: 1600px) {
+    .testament {
+        display: block;
+    }
+}
+
+/* Apply solid background color to center content */
+main {
+    background-color: var(--theme);
+}
+
+article.first-entry.home-info {
+    margin-top: 0px;
+}
+
+/* CSS for blog background image */
+#below-header {
+    background-attachment: fixed !important;
+    backdrop-filter: opacity(20%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--theme) 50%), url("/img/background.webp");
+}
+
+#below-header-post {
+    backdrop-filter: blur(3px);
+}

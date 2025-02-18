@@ -1,0 +1,20 @@
+<img class="testament" id="testy" loading="eager" src="/img/testament_footer/ggxx_neutral.avif"/>
+
+<script>
+    var testy = document.getElementById("testy");
+
+    document.addEventListener("scroll", (event) => {
+        if (!testy.getAttribute("src").endsWith("rd.avif")) {
+            testy.setAttribute("src", "/img/testament_footer/ggxx_walkforward.avif");
+        }
+    });
+
+    document.addEventListener("scrollend", (event) => {
+        if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+            testy.setAttribute("src", "/img/testament_footer/ggxx_crouching.avif");
+        }
+        else {
+            testy.setAttribute("src", "/img/testament_footer/ggxx_neutral.avif");
+        }
+    });
+</script>

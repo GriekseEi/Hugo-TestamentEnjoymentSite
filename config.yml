@@ -1,0 +1,98 @@
+baseURL: https://testamentenjoyment.neocities.com/
+title: TESTAMENT✙ENJOYMENT
+languageCode: en-US
+theme: [PaperMod]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+security:
+  exec:
+    allow:
+      - babel
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Posts
+          url: posts
+          weight: 2
+        - name: Play SpikeOut
+          url: play-spikeout
+          weight: 1
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: RSS
+          url: index.xml
+          weight: 15
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+cover:
+  image: https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
+  alt: hello
+  caption: world
+
+params:
+  env: production
+  description: TESTAMENT TESTAMENT TESTAMENT
+  author: Durandal
+
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  comments: true
+
+  homeInfoParams:
+    Content: >
+      - ![Homepage cover image](./front-cover.webp)
+
+      - Welcome to my blog! I'm **Durandal / TestamentEnjoyment**. Amongst other things I like talking about game design, in particular action games and arcade-style games.
+
+      
+
+      - You can contact through my socials or my e-mail below:
+
+  socialIcons:
+    - name: github
+      title: GitHub projects
+      url: "https://github.com/GriekseEi"
+    - name: bluesky
+      title: TestamentEnjoyment on BlueSky
+      url: https://bsky.app/profile/testamentenjoyment.bsky.social
+    - name: youtube
+      title: TestamentEnjoyment on YouTube
+      url: https://www.youtube.com/@TestamentEnjoymentGaming-rv2jw
+    - name: email
+      title: testamentenjoyment@gmail.com
+      url: mailto:testamentenjoyment@gmail.com
+
+  assets:
+    disableHLJS: true
