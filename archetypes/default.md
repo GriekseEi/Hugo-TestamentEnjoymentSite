@@ -7,5 +7,5 @@ CanonicalLinkText = 'Originally published at'
 canonicalURL = ''
 summary = ''
 blueskyPostUri = ''
-listCoverImage = ''
+listEntryImage = './catalog-cover.webp'
 +++

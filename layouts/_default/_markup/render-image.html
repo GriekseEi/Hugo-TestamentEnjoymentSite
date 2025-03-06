@@ -1,0 +1,43 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- $img := $u.String -}}
+{{- $width := "auto" -}}
+{{- $height := "auto" -}}
+
+{{- /* When entering Markdown image links with extra stuff added for the image processing module, we have to trim that excess for this to work */ -}}
+{{- if in $img "?" -}}
+    {{- $img = index (strings.Split $img "?") 0 -}}
+{{- end -}}
+{{- if in $img "#" -}}
+    {{- $img = index (strings.Split $img "#") 0 -}}
+{{- end -}}
+
+{{- with or (.Page.Resources.GetMatch $img) (resources.GetMatch $img) -}}
+    {{- $width = .Width -}}
+    {{- $height = .Height -}}
+{{- end -}}
+
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $src = .RelPermalink -}}
+    {{- with $u.RawQuery -}}
+      {{- $src = printf "%s?%s" $src . -}}
+    {{- end -}}
+    {{- with $u.Fragment -}}
+      {{- $src = printf "%s#%s" $src . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<img src="{{ $src }}" alt="{{ .PlainText }}"
+  {{- with .Title }} title="{{ . }}" {{- end -}}
+  width="{{ $width }}"
+  height="{{ $height }}"
+  {{- range $k, $v := .Attributes -}}
+    {{- if $v -}}
+      {{- printf " %s=%q" $k ($v | transform.HTMLEscape) | safeHTMLAttr -}}
+    {{- end -}}
+  {{- end -}}
+>
+{{- /**/ -}}

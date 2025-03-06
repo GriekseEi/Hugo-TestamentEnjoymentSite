@@ -1,28 +1,130 @@
+/* Custom font declarations */
+@font-face {
+    font-family: 'Noticia Text';
+    src: 
+        local("Noticia Text"), 
+        local("NoticiaText-Regular"),
+        url("/fonts/NoticiaText-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Noticia Text';
+    src: 
+        local("NoticiaText-Italic"),
+        url("/fonts/NoticiaText-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noticia Text';
+    src: 
+        local("NoticiaText-Bold"),
+        url("/fonts/NoticiaText-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noticia Text';
+    src: 
+        local("NoticiaText-BoldItalic"),
+        url("/fonts/NoticiaText-BoldItalic.woff2") format("woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Staatliches';
+    src:
+        local("Staatliches"),
+        url("/fonts/Staatliches-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.prev>span,
+.next>span,
+.post-tags a,
+.logo a,
+.breadcrumbs>a,
+.post-meta span,
+.details,
+.post-meta,
+li,
+ul>li,
+strong,
+h1, h2, h3, h4, h5,
+p {
+    font-family: 'Noticia Text';
+}
+
+li>a>span {
+    font-family: 'Noticia Text';
+    font-size: large;
+}
+
+h1.post-title.entry-hint-parent {
+    font-family: 'Staatliches';
+    font-weight: normal;
+}
+
+h2.entry-hint-parent {
+    font-family: 'Staatliches';
+    font-weight: normal;
+}
+
+.home-recent {
+    font-family: 'Noticia Text', serif;
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom color vars */
+:root {
+    --shadow: rgba(50, 50, 93, 0.25);
+    font-display: optional;
+}
+
+.dark {
+    --shadow: rgba(126, 126, 146, 0.25);
+}
+
+/*Blockquote styling */
+
+.post-content blockquote {
+    margin-right: 1em;
+    background: var(--tertiary);
+    box-shadow: var(--shadow) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+blockquote>p {
+    font-size: 16px;
+    padding: 4px;
+}
+
+p>img {
+    box-shadow: var(--shadow) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 /* Extend central content column width from 2 to 16 */
 .main {
     max-width: calc(var(--main-width) + var(--gap) * 16);
+    padding-top: 0px;
 }
 
 /* Add crimson border around post entries */
 .post-entry {
     border-color: crimson;
     border-width: 2px;
-}
-
-/* Show --list-img cover images in list entries */
-@media (min-width: 800px) {
-    .entry-content>p,
-    .entry-content>h2,
-    .entry-header>p,
-    .entry-header>h2 {
-        width: 70%;
-    }
-
-    .post-entry {
-        background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, var(--entry) 30%), var(--list-img);
-        background-position: right;
-        background-repeat: no-repeat;
-    }
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
 }
 
 /* Apply embellishments to blog title logo */
@@ -39,6 +141,7 @@
 }
 
 /* Apply highlighting effects to list entries  */
+
 article.post-entry:hover {
     filter: brightness(75%);
 }
@@ -62,17 +165,13 @@ article.post-entry:active {
 }
 
 /* Set content title font in content pages and list entries to this font */
-h1.post-title.entry-hint-parent {
-    font-family: Georgia, serif;
-    font-weight: normal;
+
+.entry-footer {
+    margin-bottom: 0px;
 }
 
-h2.entry-hint-parent {
-    font-family: Georgia, serif;
-    font-weight: normal;
-}
-
-span:hover {
+a>span:hover,
+.home-recent:hover {
     text-decoration: underline;
 }
 
@@ -103,10 +202,6 @@ a.footnote-ref {
     font-weight: bold;
 }
 
-.background-image {
-    background-repeat: repeat;
-}
-
 /* For Testament widget in the bottom left */
 .testament {
     display: none;
@@ -117,11 +212,30 @@ a.footnote-ref {
     padding: 12px;
 }
 
+.testament-strive {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px;
+    transform: scaleX(-1);
+}
+
 /* Only display Testament if the monitor is wide enough */
 @media (min-width: 1600px) {
     .testament {
         display: block;
     }
+
+    .testament-strive {
+        display: block;
+    }
+}
+
+/* Go to top button should be above Testament */
+.top-link {
+    z-index: 100;
 }
 
 /* Apply solid background color to center content */
@@ -131,15 +245,146 @@ main {
 
 article.first-entry.home-info {
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* CSS for blog background image */
+.background-image {
+    background-repeat: repeat;
+}
+
 #below-header {
     background-attachment: fixed !important;
-    backdrop-filter: opacity(20%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--theme) 50%), url("/img/background.webp");
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(from var(--theme) r g b / .97) 60%), url("/img/background.webp");
 }
 
 #below-header-post {
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
+}
+
+/* Home page settings */
+.home-recent {
+    margin-bottom: 16px;
+}
+
+.first-entry>.entry-footer {
+    margin-bottom: 32px;
+}
+
+ol>li>p {
+    color: gray;
+}
+
+/* CSS for figures in posts */
+.post-content figure {
+    width: max-content;
+    margin-bottom: 0px;
+    padding: 8px;
+    border: 2px var(--secondary) solid;
+    border-color: crimson;
+    background-color: var(--tertiary);
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
+}
+
+.content-figure-right>img {
+    margin: 0px;
+}
+
+.content-figure-right>figcaption>p {
+    margin: 0px;
+}
+
+.content-figure-right {
+    float: right;
+    margin-left: 24px;
+    text-align: right;
+}
+
+.content-figure-left {
+    float: left;
+    margin-right: 24px;
+    text-align: left;
+}
+
+/* For the 88x31 stickers in the home page  */
+.linkbox {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linkbox-item {
+    width: 88px;
+    height: 31px;
+    image-rendering: pixelated;
+}
+
+/* Hide certain elements when on mobile */
+@media (max-width: 800px) {
+    .entry-content>p {
+        display: none;
+    }
+
+    .post-entry>div {
+        display: none;
+    }
+
+    h1.post-title.entry-hint-parent {
+        font-size: 28px;
+    }
+
+    h2.entry-hint-parent {
+        font-size: 18px;
+    }
+
+    /* For smaller layouts, float figures in center regardless of initial settings */
+    .post-content figure {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .paginav {
+        line-height: 24px;
+    }
+
+    .next span,
+    p {
+        font-size: 16px;
+    }
+
+    .logo a {
+        font-size: 22px;
+    }
+
+    blockquote>p {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+}
+
+/* Show --list-img cover images in list entries */
+@media (min-width: 800px) {
+    .entry-content>p {
+        display: block;
+    }
+
+    .entry-content>h2,
+    .entry-content>p,
+    .entry-header>p,
+    .entry-header>h2 {
+        width: 70%;
+    }
+
+    .post-entry {
+        background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, var(--entry) 30%), var(--list-img);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
 }

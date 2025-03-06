@@ -1,0 +1,16 @@
+{{- with site.Params.webButtons -}}
+<div class="linkbox">
+    {{- range site.Params.webButtons -}}
+        {{- $u := urls.Parse .src -}}
+        {{- $src := $u.String -}}
+
+        {{- if not $u.IsAbs -}}
+            {{- $src = printf "8831/%s" $src -}}
+        {{- end -}}
+
+        {{- if .link -}}<a href="{{ .link }}">{{- end -}}
+        <img src="{{ $src }}" alt="{{ .alt }}" class="linkbox-item" loading="lazy" width="88" height="31"/>
+        {{- if .link -}}</a>{{- end -}}
+    {{- end -}}
+</div>
+{{- end -}}

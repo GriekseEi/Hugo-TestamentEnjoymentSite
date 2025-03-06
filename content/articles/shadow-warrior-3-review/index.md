@@ -1,13 +1,18 @@
 +++
 date = '2024-11-22T00:18:34+01:00'
-draft = false
+draft = true
 title = 'On Shadow Warrior 3: We Have DOOM Eternal At Home'
 tags = ['game design', 'fps', 'shadow warrior', 'doom', 'doom eternal']
 summary = 'After switching gears to resemble Borderlands, Shadow Warrior is yet again switching gears to not-so-subtly resemble the modern DOOM games. Does it have anything interesting to add to the conversation?'
 ShowCanonicalLink = true
 CanonicalLinkText = 'Originally published at'
 canonicalURL = 'https://www.backloggd.com/u/Durandal/review/1686904/'
+blueskyPostUri = 'https://bsky.app/profile/testamentenjoyment.bsky.social/post/3l7aqo3bysx2t'
+listEntryImage = './catalog-cover.webp'
 +++
+
+![Screenshot of Shadow Warrior 3](article-header.webp)
+
 Rather than ape DOOM/Duke Nukem or Borderlands, this time around Shadow Warrior is aping Doom 2016/Eternal in many ways impossible not to notice. Shadow Warrior 3 has most of Doom 2016/Eternal’s fundamentals down pat, but in doing so it also inherited Doom 2016/Eternal’s core flaws: an overreliance on “scramble encounters”[^1] coupled with forgiving resource replenishment and non-committal mobility/weapon selection in a campaign whose encounters start blurring together once it stops introducing new combat elements. Encounters may be technically distinct in terms of enemies used and arena layout, but they are not meaningfully distinct in terms of the strategy required to approach them. It’s like a Pacman game where new stages only have different layouts but no notable gimmicks. Here SW3 is no exception. However, SW3 does make some tweaks to the formula that may or may not work out.
 
 The most noticeable one is that unlike Doom 2016/Eternal, there is no scaling on health drops. DE would increase health drops on enemy kills if you were low on health, but in SW3 this scaling is nowhere as present. Health is usually replenished at a linear rate rather than in big bursts; it is always dropped when hitting/killing enemies with guns. The main consequence of this is that you can’t easily make big comebacks like in DE. At low health you actually have to start thinking a little about how to stay alive long enough to restore your health[^2]. This also means that compared to DE you are way more reliant on item spawners in arenas to stay stocked. It helps that there is no secondary health/armor bar in SW3, too.
@@ -31,7 +36,7 @@ Despite having only 11 enemy types, I believe Shadow Warrior 3’s enemy roster 
 
 In SW3 ranged enemies are no slouch either. Laser Shoguns are more than capable of long-range sniping for massive damage, the Shokera are like Cacodemons if they had incredibly accurate tracking, whereas SW3’s Mancubus is an ultra-tanky pseudo-hitscanner that will make you break line of sight if you don’t want to get hit. One key detail that makes these work is that said ranged enemies can’t be easily removed without some commitment. A common issue with sniper enemies is that because they’re usually given wide vantages, it’s also very easy to get an angle on them with your own long-range gun and remove them before the rest of the fight starts. Laser Shoguns are then completely impervious to frontal damage, forcing you to either get close and hit their rear weak spot, or wait for them to open up their shield as they’re charging their shot. The Mancubi can’t be easily removed simply because they have the most HP out of all enemies. The Shokera on the other hand have low enough HP that you can easily remove them, but by looking up to aim at them you’re also losing sight of what’s happening on the ground. Combine them with the chaser and indirect enemy types, and you have an enemy roster capable of controlling space and making individual encounters play out differently in dynamic unpredictable ways.
 
-To sum it up, Shadow Warrior 3 makes a lot of welcome tweaks to DE’s formula that are worth looking into, but a lot of the fundamental issues remain. Enemy design is stronger and player/enemy balance is better (on Hardcore Mode at least), but the absence of static elements in arenas and unchallenging platforming still lets down the game. I still hope Flying Wild Hog survives being Embraced to release a Shadow Warrior 4 and/or Evil West 2, because they have the skill and talent to break their 7/10 curse should they ever decide to iterate on a formula instead of changing gears with each game. Although knowing the Shadow Warrior series, SW4 will most likely change gears yet again to become a roguelite.  
+To sum it up, Shadow Warrior 3 makes a lot of welcome tweaks to DE’s formula that are worth looking into, but a lot of the fundamental issues remain. Enemy design is stronger and player/enemy balance is better (on Hardcore Mode at least), but the absence of static elements in arenas and unchallenging platforming still lets down the game. I still hope Flying Wild Hog survives being Embraced to release a Shadow Warrior 4 and/or Evil West 2, because they have the skill and talent to break their 7/10 curse should they ever decide to iterate on a formula instead of changing gears with each game. Although knowing the Shadow Warrior series, SW4 will most likely change gears yet again to become a roguelite. 🔚  
 
 **Addenda:**
 
