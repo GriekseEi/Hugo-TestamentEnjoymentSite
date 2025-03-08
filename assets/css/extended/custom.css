@@ -4,6 +4,7 @@
     src: 
         local("Noticia Text"), 
         local("NoticiaText-Regular"),
+        url("../../fonts/NoticiaText-Regular.woff2") format("woff2"),
         url("/fonts/NoticiaText-Regular.woff2") format("woff2");
 }
 
@@ -11,6 +12,7 @@
     font-family: 'Noticia Text';
     src: 
         local("NoticiaText-Italic"),
+        url("../../fonts/NoticiaText-Italic.woff2") format("woff2"),
         url("/fonts/NoticiaText-Italic.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
@@ -20,6 +22,7 @@
     font-family: 'Noticia Text';
     src: 
         local("NoticiaText-Bold"),
+        url("../../fonts/NoticiaText-Bold.woff2") format("woff2"),
         url("/fonts/NoticiaText-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
@@ -29,6 +32,7 @@
     font-family: 'Noticia Text';
     src: 
         local("NoticiaText-BoldItalic"),
+        url("../../fonts/NoticiaText-BoldItalic.woff2") format("woff2"),
         url("/fonts/NoticiaText-BoldItalic.woff2") format("woff2");
     font-weight: bold;
     font-style: italic;
@@ -38,6 +42,7 @@
     font-family: 'Staatliches';
     src:
         local("Staatliches"),
+        url("../../fonts/Staatliches-Regular.woff2") format("woff2"),
         url("/fonts/Staatliches-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
@@ -255,7 +260,7 @@ article.first-entry.home-info {
 
 #below-header {
     background-attachment: fixed !important;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(from var(--theme) r g b / .97) 60%), url("/img/background.webp");
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(from var(--theme) r g b / .97) 60%), url("../../img/background.webp");
 }
 
 #below-header-post {
