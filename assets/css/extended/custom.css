@@ -126,7 +126,7 @@ p>img {
 
 /* Extend central content column width from 2 to 16 */
 .main {
-    max-width: calc(var(--main-width) + var(--gap) * 16);
+    max-width: calc(var(--main-width) + var(--gap) * 8);
     padding-top: 0px;
 }
 

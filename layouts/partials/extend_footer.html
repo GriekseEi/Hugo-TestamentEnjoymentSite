@@ -1,36 +1,36 @@
-<img class="testament" id="testy" loading="eager" src='{{ urls.AbsURL "/img/testament_footer/ggxx_neutral.avif" }}' height="376" width="294"/>
-<img class="testament-strive" id="testy_strive" loading="eager" src='{{ urls.AbsURL "/img/testament_footer/strive_teatime.avif" }}' width="282" height="400"/>
+<img class="testament" id="testy" loading="eager" src='{{ "img/testament_footer/ggxx_neutral.avif" | absURL }}' height="376" width="294"/>
+<img class="testament-strive" id="testy_strive" loading="eager" src='{{ "img/testament_footer/strive_teatime.avif" | absURL }}' width="282" height="400"/>
 
 <script>
     var testy = document.getElementById("testy");
     var testy_strive = document.getElementById("testy_strive");
 
     var strive_options = [
-        '{{ urls.AbsURL "/img/testament_footer/strive_crow.avif" }}',
-        '{{ urls.AbsURL "/img/testament_footer/strive_hat_adjust.avif" }}',
-        '{{ urls.AbsURL "/img/testament_footer/strive_teatime.avif" }}',
-        '{{ urls.AbsURL "/img/testament_footer/strive_winpose.avif" }}',
-        '{{ urls.AbsURL "/img/testament_footer/strive_taunt.avif" }}'
+        '{{ "img/testament_footer/strive_crow.avif" | absURL }}',
+        '{{ "img/testament_footer/strive_hat_adjust.avif" | absURL }}',
+        '{{ "img/testament_footer/strive_teatime.avif" | absURL }}',
+        '{{ "img/testament_footer/strive_winpose.avif" | absURL }}',
+        '{{ "img/testament_footer/strive_taunt.avif" | absURL }}'
     ];
 
     document.addEventListener("scroll", (event) => {
         if (!testy.getAttribute("src").endsWith("rd.avif")) {
-            testy.setAttribute("src", '{{ urls.AbsURL "/img/testament_footer/ggxx_walkforward.avif" }}');
+            testy.setAttribute("src", '{{ "img/testament_footer/ggxx_walkforward.avif" | absURL }}');
         }
 
         if (!testy_strive.getAttribute("src").endsWith("rd.avif")) {
-            testy_strive.setAttribute("src", '{{ urls.AbsURL "/img/testament_footer/strive_walkforward.avif" }}');
+            testy_strive.setAttribute("src", '{{ "img/testament_footer/strive_walkforward.avif" | absURL }}');
         }
     });
 
     document.addEventListener("scrollend", (event) => {
         if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-            testy.setAttribute("src", '{{ urls.AbsURL "/img/testament_footer/ggxx_crouching.avif" }}');
-            testy_strive.setAttribute("src", '{{ urls.AbsURL "/img/testament_footer/strive_crouching.avif" }}');
+            testy.setAttribute("src", '{{ "img/testament_footer/ggxx_crouching.avif" | absURL }}');
+            testy_strive.setAttribute("src", '{{ "img/testament_footer/strive_crouching.avif" | absURL }}');
         }
         else {
             var randStriveIndex = Math.floor(Math.random() * strive_options.length);
-            testy.setAttribute("src", '{{ urls.AbsURL "/img/testament_footer/ggxx_neutral.avif" }}');
+            testy.setAttribute("src", '{{ "img/testament_footer/ggxx_neutral.avif" | absURL }}');
             testy_strive.setAttribute("src", strive_options[randStriveIndex]);
         }
     });
