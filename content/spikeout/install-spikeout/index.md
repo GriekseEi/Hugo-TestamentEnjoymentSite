@@ -1,11 +1,10 @@
 +++
-date = '2025-03-06T11:46:24+01:00'
+date = '2025-03-08T08:46:24+01:00'
 draft = false
 title = "How To Setup SpikeOut"
 summary = 'Click here to learn how to install SpikeOut!'
 tags = ['spikeout', 'guide']
 blueskyPostUri = 'at://did:plc:b7wncmt7q7rqwzu5enl5gsya/app.bsky.feed.post/3l7aqo3bysx2t'
-# blueskyPostUri = 'https://bsky.app/profile/did:plc:b7wncmt7q7rqwzu5enl5gsya/post/3l7aqo3bysx2t'
 listEntryImage = './catalog-cover.webp'
 showToc = true
 showWordCount = false
@@ -36,6 +35,8 @@ However, I *highly recommend* that you go for the Steam option, because this all
 
 > The way that the Steam Input setup works it that the Supermodel control config is set up with only keyboard inputs, and Steam Input does all the work of identifying your gamepad and making sure your buttons are bound to the keyboard keys, no matter your controller type. *This also means that if you start rebinding the keyboard inputs in Supermodel, the Steam Input binds may no longer work.*
 
+&nbsp;
+
 #### How to install
 
 To run the script, open a PowerShell window (administrator privileges are not required) and run the following two commands. It will grab the script from my GitHub and immediately run it. The script is compatible with Windows PowerShell 5.0+, which is installed by default on any modern Windows installation.
@@ -50,6 +51,8 @@ The script starts a setup which will download the latest version of the Supermod
 *However, for legal reasons this installer script does **NOT** include the SpikeOut ROMs.* You will have to find these (*spikeout.zip* for Digital Battle Online and *spikeofe.zip* for Final Edition) yourself. If you got the SpikeOut ROMs by way of a MAME ROM set megapack, make sure they are NON-MERGED romsets. Merged romsets will NOT work.
 
 > If you end up breaking your Supermodel installation somehow (or you just want the newest Supermodel version), you can simply run the script again and it will reinstall everything from scratch.
+
+&nbsp;
 
 **Pros**:
 

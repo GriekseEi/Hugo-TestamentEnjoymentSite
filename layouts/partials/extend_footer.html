@@ -1,36 +1,36 @@
-<img class="testament" id="testy" loading="eager" src="../../img/testament_footer/ggxx_neutral.avif" height="376" width="294"/>
-<img class="testament-strive" id="testy_strive" loading="eager" src="../../img/testament_footer/strive_teatime.avif" width="282" height="400"/>
+<img class="testament" id="testy" loading="eager" src="/img/testament_footer/ggxx_neutral.avif" height="376" width="294"/>
+<img class="testament-strive" id="testy_strive" loading="eager" src="/img/testament_footer/strive_teatime.avif" width="282" height="400"/>
 
 <script>
     var testy = document.getElementById("testy");
     var testy_strive = document.getElementById("testy_strive");
 
     var strive_options = [
-        "../../img/testament_footer/strive_crow.avif",
-        "../../img/testament_footer/strive_hat_adjust.avif",
-        "../../img/testament_footer/strive_teatime.avif",
-        "../../img/testament_footer/strive_winpose.avif",
-        "../../img/testament_footer/strive_taunt.avif"
+        "/img/testament_footer/strive_crow.avif",
+        "/img/testament_footer/strive_hat_adjust.avif",
+        "/img/testament_footer/strive_teatime.avif",
+        "/img/testament_footer/strive_winpose.avif",
+        "/img/testament_footer/strive_taunt.avif"
     ];
 
     document.addEventListener("scroll", (event) => {
         if (!testy.getAttribute("src").endsWith("rd.avif")) {
-            testy.setAttribute("src", "../../img/testament_footer/ggxx_walkforward.avif");
+            testy.setAttribute("src", "/img/testament_footer/ggxx_walkforward.avif");
         }
 
         if (!testy_strive.getAttribute("src").endsWith("rd.avif")) {
-            testy_strive.setAttribute("src", "../../img/testament_footer/strive_walkforward.avif");
+            testy_strive.setAttribute("src", "/img/testament_footer/strive_walkforward.avif");
         }
     });
 
     document.addEventListener("scrollend", (event) => {
         if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-            testy.setAttribute("src", "../../img/testament_footer/ggxx_crouching.avif");
-            testy_strive.setAttribute("src", "../../img/testament_footer/strive_crouching.avif");
+            testy.setAttribute("src", "/img/testament_footer/ggxx_crouching.avif");
+            testy_strive.setAttribute("src", "/img/testament_footer/strive_crouching.avif");
         }
         else {
             var randStriveIndex = Math.floor(Math.random() * strive_options.length);
-            testy.setAttribute("src", "../../img/testament_footer/ggxx_neutral.avif");
+            testy.setAttribute("src", "/img/testament_footer/ggxx_neutral.avif");
             testy_strive.setAttribute("src", strive_options[randStriveIndex]);
         }
     });

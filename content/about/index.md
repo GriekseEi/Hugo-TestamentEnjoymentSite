@@ -1,14 +1,16 @@
 +++
-date = '2025-02-23T15:38:42+01:00'
-draft = true
+date = '2025-03-08T08:38:42+01:00'
+draft = false
 title = 'About'
 ShowCanonicalLink = false
 CanonicalLinkText = 'Originally published at'
 canonicalURL = ''
 summary = ''
+description = 'About me'
 blueskyPostUri = ''
 showToC = false
 showWordCount = false
+
 +++
 
 ![Testie](./full-intro.avif)
