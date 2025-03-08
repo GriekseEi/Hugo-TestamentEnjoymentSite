@@ -4,7 +4,8 @@ draft = false
 title = "How To Setup SpikeOut"
 summary = 'Click here to learn how to install SpikeOut!'
 tags = ['spikeout', 'guide']
-blueskyPostUri = 'https://bsky.app/profile/testamentenjoyment.bsky.social/post/3l7aqo3bysx2t'
+blueskyPostUri = 'at://did:plc:b7wncmt7q7rqwzu5enl5gsya/app.bsky.feed.post/3l7aqo3bysx2t'
+# blueskyPostUri = 'https://bsky.app/profile/did:plc:b7wncmt7q7rqwzu5enl5gsya/post/3l7aqo3bysx2t'
 listEntryImage = './catalog-cover.webp'
 showToc = true
 showWordCount = false
@@ -18,7 +19,7 @@ For the longest time, playing *SpikeOut* on home systems was near impossible. Ou
 Although we have yet to see an official release of *SpikeOut* on modern platforms, emulation for both the Model 3 and Xbox has improved significantly in the past few years to the point where you can play any edition of SpikeOut with no major issues. Sega Model 3 games can be emulated using the [Supermodel emulator](https://www.supermodel3.com/), and Xbox games using the [Xemu](https://xemu.app/) emulator. To play SpikeOut you can use one of the following methods, ordered in terms of which I recommend the most:
 
 1. [My PowerShell installer script](#1-recommended-my-powershell-installer-script)
-2. [Setting up the Sega Model 3 emulator yourself with a GUI](#2-setting-up-the-sega-model-3-supermodel-emulator-yourself-with-a-gui)
+2. [Setting up the Sega Model 3 emulator yourself with a GUI](#2-setting-up-the-sega-model-3-supermodel-emulator-yourself-with-gui-and-launchbox-presets)
 3. [SpikeOut: Battle Street with Xbox emulation](#3-spikeout-battle-street-with-xbox-emulation)
 4. [SpikeOut through Like a Dragon: Infinite Wealth](#4-spikeout-through-like-a-dragon-infinite-wealth)
 5. [Playing SpikeOut on an actual arcade PCB](#5-playing-spikeout-on-an-actual-arcade-pcb)

@@ -96,7 +96,7 @@ In 2025 I finally bit the bullet by trying my hand at making a personal blog usi
 
 ## FIND ME ON THESE WEBSITES
 
-- [BlueSky](https://bsky.app/profile/testamentenjoyment.bsky.social)
+- [BlueSky](https://bsky.app/profile/did:plc:b7wncmt7q7rqwzu5enl5gsya)
 - [YouTube](https://www.youtube.com/channel/UCM-CbDBbifpsFNecbBhW4PA)
 - [GitHub](https://github.com/GriekseEi)
 - [E-mail](mailto:testamentenjoyment@gmail.com)
