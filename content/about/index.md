@@ -1,5 +1,6 @@
 +++
 date = '2025-03-08T08:38:42+01:00'
+hideModDate = true
 draft = false
 title = 'About'
 ShowCanonicalLink = false
@@ -9,7 +10,6 @@ summary = 'About me'
 blueskyPostUri = ''
 showToC = false
 showWordCount = false
-
 +++
 
 ![Testie](./full-intro.avif)
@@ -100,5 +100,5 @@ In 2025 I finally bit the bullet by trying my hand at making a personal blog usi
 - [BlueSky](https://bsky.app/profile/did:plc:b7wncmt7q7rqwzu5enl5gsya)
 - [YouTube](https://www.youtube.com/channel/UCM-CbDBbifpsFNecbBhW4PA)
 - [GitHub](https://github.com/GriekseEi)
-- [E-mail](mailto:testamentenjoyment@gmail.com)
+- [E-mail](mailto:blog@testamentenjoyment.net)
 - [Backloggd](https://www.backloggd.com/u/Durandal/)

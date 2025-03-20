@@ -71,6 +71,7 @@ params:
   ShowToc: true
   TocOpen: true
   comments: true
+  bskyCommentsVersion: 0.9.0
 
   mainsections:
     - articles
@@ -107,7 +108,7 @@ params:
       url: https://www.youtube.com/@TestamentEnjoymentGaming-rv2jw
     - name: email
       title: testamentenjoyment@gmail.com
-      url: mailto:testamentenjoyment@gmail.com
+      url: mailto:blog@testamentenjoyment.net
     - name: RSS
       title: TestamentEnjoyment RSS feed
       url: /index.xml

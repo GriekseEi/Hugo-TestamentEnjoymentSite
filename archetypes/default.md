@@ -1,5 +1,6 @@
 +++
 date = '{{ .Date }}'
+hideModDate = false
 draft = true
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 ShowCanonicalLink = false
