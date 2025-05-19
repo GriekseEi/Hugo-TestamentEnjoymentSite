@@ -103,6 +103,18 @@ img {
     height: auto;
 }
 
+.post-content h2 {
+    text-decoration: underline red;
+}
+
+.post-content h3 {
+    text-decoration: underline crimson;
+}
+
+.post-content h4 {
+    text-decoration: underline darkred;
+}
+
 /* Custom color vars */
 :root {
     --shadow: rgba(50, 50, 93, 0.25);
@@ -295,11 +307,6 @@ ol>li>p {
 .post-content figure {
     width: max-content;
     margin-bottom: 0px;
-    padding: 8px;
-    border: 2px var(--secondary) solid;
-    border-color: crimson;
-    background-color: var(--tertiary);
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
 }
 
 .content-figure-right>img {
@@ -320,6 +327,21 @@ ol>li>p {
     float: left;
     margin-right: 24px;
     text-align: left;
+}
+
+.content-figure-left>img {
+    margin: 0px;
+}
+
+.content-figure-right>img>p {
+    margin: 0px;
+}
+
+.with-container {
+    border: 2px var(--secondary) solid;
+    border-color: crimson;
+    background-color: var(--tertiary);
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
 }
 
 /* For the 88x31 stickers in the home page  */
