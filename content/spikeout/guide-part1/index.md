@@ -9,7 +9,7 @@ ShowCanonicalLink = false
 showWordCount = false
 showToc = true
 weight = 3
-blueskyPostUri = ''
+blueskyPostUri = 'at://did:plc:b7wncmt7q7rqwzu5enl5gsya/app.bsky.feed.post/3lpkp57zndk2g'
 listEntryImage = './catalog-cover.webp'
 +++
 
