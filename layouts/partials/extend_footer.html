@@ -1,8 +1,9 @@
-<img class="testament" id="testy" loading="eager" src='{{ "img/testament_footer/ggxx_neutral.avif" | absURL }}' height="376" width="294"/>
+<!--<img class="testament" id="testy" loading="eager" src='{{ "img/testament_footer/ggxx_neutral.avif" | absURL }}' height="376" width="294"/>-->
 <img class="testament-strive" id="testy_strive" loading="eager" src='{{ "img/testament_footer/strive_teatime.avif" | absURL }}' width="282" height="400"/>
+<img class="testament" id="testy" loading="eager" src='{{ "img/testament_footer/testy_prideflag.webp" | absURL }}' width="350" height="350"/>
 
 <script>
-    var testy = document.getElementById("testy");
+    //var testy = document.getElementById("testy");
     var testy_strive = document.getElementById("testy_strive");
 
     var strive_options = [
@@ -14,9 +15,9 @@
     ];
 
     document.addEventListener("scroll", (event) => {
-        if (!testy.getAttribute("src").endsWith("rd.avif")) {
-            testy.setAttribute("src", '{{ "img/testament_footer/ggxx_walkforward.avif" | absURL }}');
-        }
+        //if (!testy.getAttribute("src").endsWith("rd.avif")) {
+        //    testy.setAttribute("src", '{{ "img/testament_footer/ggxx_walkforward.avif" | absURL }}');
+        //}
 
         if (!testy_strive.getAttribute("src").endsWith("rd.avif")) {
             testy_strive.setAttribute("src", '{{ "img/testament_footer/strive_walkforward.avif" | absURL }}');
@@ -25,12 +26,12 @@
 
     document.addEventListener("scrollend", (event) => {
         if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-            testy.setAttribute("src", '{{ "img/testament_footer/ggxx_crouching.avif" | absURL }}');
+            //testy.setAttribute("src", '{{ "img/testament_footer/ggxx_crouching.avif" | absURL }}');
             testy_strive.setAttribute("src", '{{ "img/testament_footer/strive_crouching.avif" | absURL }}');
         }
         else {
             var randStriveIndex = Math.floor(Math.random() * strive_options.length);
-            testy.setAttribute("src", '{{ "img/testament_footer/ggxx_neutral.avif" | absURL }}');
+            //testy.setAttribute("src", '{{ "img/testament_footer/ggxx_neutral.avif" | absURL }}');
             testy_strive.setAttribute("src", strive_options[randStriveIndex]);
         }
     });

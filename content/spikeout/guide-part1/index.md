@@ -1,6 +1,6 @@
 +++
 date = '2025-05-19T00:22:12+01:00'
-hideModDate = false
+hideModDate = true
 draft = false
 tags = ['spikeout', 'guide']
 title = 'SpikeOut Guide: Part 1 - The Basics'
@@ -1072,7 +1072,7 @@ Here are some nasty difficulty spikes and milestones you can set for yourself, i
 
 ## 9. Version history
 
-- **Version 1.0 - 20/05/2025**
+- **Version 1.0 - 20/05/2025** (Archive: [[1]](https://web.archive.org/web/20250528201304/https://testamentenjoyment.net/spikeout/guide-part1/) [[2]](https://archive.is/CETfA))
   - Initial version
 
 ## 10. Coming in the future in Part 2
